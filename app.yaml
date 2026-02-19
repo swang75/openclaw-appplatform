@@ -85,7 +85,6 @@ workers:
       - key: GRADIENT_API_KEY
         scope: RUN_TIME
         type: SECRET
-        value: "sk-do-tuNf0VoUbcYOvxV3xfFFTe4p9aTPehaZx6uT45qINw1Eoq1hPj2JMPtqn1"
       - key: SSH_ENABLE
         scope: RUN_TIME
         value: "false"
