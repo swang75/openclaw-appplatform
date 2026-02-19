@@ -20,7 +20,7 @@ workers:
         type: SECRET
       - key: STABLE_HOSTNAME
         scope: RUN_TIME
-        value: openclaw
+        value: openclaw-swang75
 
       # ============================================================
       # FEATURE FLAGS
@@ -28,13 +28,13 @@ workers:
       # ============================================================
       - key: ENABLE_NGROK
         scope: RUN_TIME
-        value: "false"
+        value: "true"
       - key: TAILSCALE_ENABLE
         scope: RUN_TIME
-        value: "false"
+        value: "true"
       - key: ENABLE_SPACES
         scope: RUN_TIME
-        value: "false"
+        value: "true"
       - key: ENABLE_UI
         scope: RUN_TIME
         value: "true"
@@ -71,10 +71,10 @@ workers:
         type: SECRET
       - key: RESTIC_SPACES_ENDPOINT
         scope: RUN_TIME
-        value: tor1.digitaloceanspaces.com
+        value: sgp1.digitaloceanspaces.com
       - key: RESTIC_SPACES_BUCKET
         scope: RUN_TIME
-        value: openclaw-backup
+        value: openclaw-swang75
       - key: RESTIC_PASSWORD
         scope: RUN_TIME
         type: SECRET
@@ -82,9 +82,6 @@ workers:
       # ============================================================
       # OPTIONAL
       # ============================================================
-      - key: OPENCLAW_GATEWAY_TOKEN
-        scope: RUN_TIME
-        type: SECRET
       - key: GRADIENT_API_KEY
         scope: RUN_TIME
         type: SECRET
@@ -93,4 +90,4 @@ workers:
         value: "false"
       - key: GITHUB_USERNAME
         scope: RUN_TIME
-        value: ""
+        value: "swang75"
