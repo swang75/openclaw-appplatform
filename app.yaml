@@ -1,5 +1,5 @@
-name: openclaw-swang75
-region: sgp # Available: nyc, ams, sfo, sgp, lon, fra, blr, syd, tor
+name: openclaw
+region: tor # Available: nyc, ams, sfo, sgp, lon, fra, blr, syd, tor
 
 workers:
   - name: openclaw
@@ -10,7 +10,7 @@ workers:
     github:
       branch: main
       deploy_on_push: true
-      repo: swang75/openclaw-appplatform
+      repo: digitalocean-labs/openclaw-appplatform
     envs:
       # ============================================================
       # REQUIRED
@@ -18,10 +18,9 @@ workers:
       - key: OPENCLAW_GATEWAY_TOKEN
         scope: RUN_TIME
         type: SECRET
-        value: e4de7495eb4943b7cbd5dffdfcdcd20494c112a975286b650a40f76025ee93f6
       - key: STABLE_HOSTNAME
         scope: RUN_TIME
-        value: openclaw-swang75
+        value: openclaw
 
       # ============================================================
       # FEATURE FLAGS
@@ -83,9 +82,9 @@ workers:
       # ============================================================
       # OPTIONAL
       # ============================================================
-#      - key: OPENCLAW_GATEWAY_TOKEN
-#        scope: RUN_TIME
-#        type: SECRET
+      - key: OPENCLAW_GATEWAY_TOKEN
+        scope: RUN_TIME
+        type: SECRET
       - key: GRADIENT_API_KEY
         scope: RUN_TIME
         type: SECRET
@@ -94,4 +93,4 @@ workers:
         value: "false"
       - key: GITHUB_USERNAME
         scope: RUN_TIME
-        value: "swang75"
+        value: ""
