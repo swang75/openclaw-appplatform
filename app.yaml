@@ -1,8 +1,8 @@
-name: openclaw
-region: tor # Available: nyc, ams, sfo, sgp, lon, fra, blr, syd, tor
+name: openclaw-swang75
+region: sgp # Available: nyc, ams, sfo, sgp, lon, fra, blr, syd, tor
 
 workers:
-  - name: openclaw
+  - name: openclaw-swang75
     dockerfile_path: /Dockerfile
     source_dir: /
     instance_count: 1
@@ -10,7 +10,7 @@ workers:
     github:
       branch: main
       deploy_on_push: true
-      repo: digitalocean-labs/openclaw-appplatform
+      repo: swang75/openclaw-appplatform
     envs:
       # ============================================================
       # REQUIRED
