@@ -18,9 +18,10 @@ workers:
       - key: OPENCLAW_GATEWAY_TOKEN
         scope: RUN_TIME
         type: SECRET
+        value: "abc123"
       - key: STABLE_HOSTNAME
         scope: RUN_TIME
-        value: openclaw-swang75
+        value: "openclaw-swang75"
 
       # ============================================================
       # FEATURE FLAGS
@@ -47,6 +48,7 @@ workers:
       - key: NGROK_AUTHTOKEN
         scope: RUN_TIME
         type: SECRET
+        value: "39qWIzCxY2Dm1Kvn8Bfi8DHWzW3_33ki43sRuKTe9u8Qu7YGn"
 
       # ============================================================
       # TAILSCALE - Private Network Access
@@ -57,6 +59,7 @@ workers:
       - key: TS_AUTHKEY
         scope: RUN_TIME
         type: SECRET
+        value: "tskey-auth-kLE6veGJxr11CNTRL-xD8arrzTvrDb1u2xwPbbsDVU4zgZbbRVc"
 
       # ============================================================
       # SPACES - Data Persistence
@@ -66,18 +69,21 @@ workers:
       - key: RESTIC_SPACES_ACCESS_KEY_ID
         scope: RUN_TIME
         type: SECRET
+        value: "DO801FUX8AQWDHYYBE7X"
       - key: RESTIC_SPACES_SECRET_ACCESS_KEY
         scope: RUN_TIME
         type: SECRET
+        value: "9BvI5n/o1oXWV7q7clCZHik8xt8Ww+N4Eo631noTNow"
       - key: RESTIC_SPACES_ENDPOINT
         scope: RUN_TIME
-        value: sgp1.digitaloceanspaces.com
+        value: "sgp1.digitaloceanspaces.com"
       - key: RESTIC_SPACES_BUCKET
         scope: RUN_TIME
-        value: openclaw-swang75
+        value: "openclaw-swang75"
       - key: RESTIC_PASSWORD
         scope: RUN_TIME
         type: SECRET
+        value: "dyzji9-zaCxuq-semxic"
 
       # ============================================================
       # OPTIONAL
@@ -85,6 +91,7 @@ workers:
       - key: GRADIENT_API_KEY
         scope: RUN_TIME
         type: SECRET
+        value: "sk-do-tuNf0VoUbcYOvxV3xfFFTe4p9aTPehaZx6uT45qINw1Eoq1hPj2JMPtqn1"
       - key: SSH_ENABLE
         scope: RUN_TIME
         value: "false"
